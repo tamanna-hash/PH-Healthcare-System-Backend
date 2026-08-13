@@ -6,8 +6,14 @@
     "useIgnoreFile": true
   },
   "files": {
-    "ignoreUnknown": false
-  },
+		"ignoreUnknown": false,
+		"includes": [
+			"**",
+			"!src/generated",
+			"!src/app/templates"
+		]
+		
+	},
   "formatter": {
     "enabled": true,
     "indentStyle": "tab"
@@ -29,8 +35,16 @@
         "noNonNullAssertion": "info",
         "useNodejsImportProtocol": "info"
       }
-    }
+      
+    },
+    
+    "includes": [
+			"**",
+			"!src/generated",
+			"!src/app/templates"
+		]
   },
+  
   "javascript": {
     "formatter": {
       "quoteStyle": "double"
